@@ -968,81 +968,74 @@ jQuery(document).ready(function () {
 
 <div id="cmsmasters_heading_5eb424b356094" class="cmsmasters_heading_wrap cmsmasters_heading_align_center">
 	<h2 class="cmsmasters_heading">call +1 000 123 1234 or fill in the form below</h2>
-</div><div class="cmsmasters_text">
-<p style="text-align: center;"><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adcing elit Lorem ipsum dolor sit amet, consectetur adip iscing elit psum dolor sit amet. </span><br />
-<span style="color: #ffffff;">Aenean consectetur fringilla mi in mollis. Etiam eleifend sollicitudin dignissim.</span></p>
 </div>
 
 <div id="cmsmasters_divider_5eb424b3560d64_73837333" class="cl"></div>
 <div class="cmsmasters_contact_form home_form"><div class="cmsmasters-form-builder">
 <div class="cmsmasters_notice cmsmasters_notice_success cmsmasters_theme_icon_check success_box" style="display:none;">
-<div class="notice_icon"></div>
-<div class="notice_content">
-<p>Thank You! <br />Your message has been sent successfully.</p>
-</div>
 </div>
 <script type="text/javascript"> 
-jQuery(document).ready(function () { 
-	jQuery('#form_7350').validationEngine('attach', { 
-		promptPosition : 'topRight', 
-		scroll : false, 
-		autoPositionUpdate : true, 
-		showArrow : false 
-		} ); 
-	jQuery('#form_7350 a#cmsmasters_7350_formsend').click(function () { 
-		jQuery('#form_7350 .loading').animate( { opacity : 1 } , 250); 
-		if (jQuery('#form_7350').validationEngine('validate')) { 
-			jQuery.post('wp-content/plugins/cmsmasters-contact-form-builder/inc/form-builder-sendmail.html', { 
-				cmsmasters_your_message_3 : jQuery('#cmsmasters_your_message_3').val(), 
-				cmsmasters_contact_phone : jQuery('#cmsmasters_contact_phone').val(), 
-				cmsmasters_add_us_to_the_waiting_list : jQuery('#cmsmasters_add_us_to_the_waiting_list').val(), 
-				cmsmasters_parents_name : jQuery('#cmsmasters_parents_name').val(), 
-				contactemail : 'NzM1MHxlcWZncWZlfDczNTA=', 
-				formname : '7350', 
-			fromname : 'wordpress' 
-			}, function (data) { 
-				jQuery('#form_7350 .loading').animate( { opacity : 0 } , 250); 
-				jQuery('#form_7350').fadeOut('slow'); 
-				document.getElementById('form_7350').reset(); 
-				jQuery('#form_7350').parent().find('.box').hide(); 
-				jQuery('#form_7350').parent().find('.success_box').fadeIn('fast'); 
-				jQuery('html, body').animate( { scrollTop : jQuery('#form_7350').offset().top - 140 } , 'slow'); 
-				jQuery('#form_7350').parent().find('.success_box').delay(5000).fadeOut(1000, function () { 
-					jQuery('#form_7350').fadeIn('slow'); 
-				} ); 
+	jQuery(document).ready(function () { 
+		jQuery('#form_7350').validationEngine('attach', { 
+			promptPosition : 'topRight', 
+			scroll : false, 
+			autoPositionUpdate : true, 
+			showArrow : false 
 			} ); 
-			return false; 
-		} else { 
-			jQuery('#form_7350 .loading').animate( { opacity : 0 } , 250); 
-			return false; 
-		} 
+		jQuery('#form_7350 a#cmsmasters_7350_formsend').click(function () { 
+			jQuery('#form_7350 .loading').animate( { opacity : 1 } , 250); 
+			if (jQuery('#form_7350').validationEngine('validate')) { 
+				jQuery.post('', { 
+					cmsmasters_your_message_3 : jQuery('#cmsmasters_your_message_3').val(), 
+					cmsmasters_contact_phone : jQuery('#cmsmasters_contact_phone').val(), 
+					cmsmasters_add_us_to_the_waiting_list : jQuery('#cmsmasters_add_us_to_the_waiting_list').val(), 
+					cmsmasters_parents_name : jQuery('#cmsmasters_parents_name').val(), 
+					contactemail : 'NzM1MHxlcWZncWZlfDczNTA=', 
+					formname : '7350', 
+				fromname : 'wordpress' 
+				}, function (data) { 
+					jQuery('#form_7350 .loading').animate( { opacity : 0 } , 250); 
+					jQuery('#form_7350').fadeOut('slow'); 
+					document.getElementById('form_7350').reset(); 
+					jQuery('#form_7350').parent().find('.box').hide(); 
+					jQuery('#form_7350').parent().find('.success_box').fadeIn('fast'); 
+					jQuery('html, body').animate( { scrollTop : jQuery('#form_7350').offset().top - 140 } , 'slow'); 
+					jQuery('#form_7350').parent().find('.success_box').delay(5000).fadeOut(1000, function () { 
+						jQuery('#form_7350').fadeIn('slow'); 
+					} ); 
+				} ); 
+				return false; 
+			} else { 
+				jQuery('#form_7350 .loading').animate( { opacity : 0 } , 250); 
+				return false; 
+			} 
+		} ); 
 	} ); 
-} ); 
-</script>
+	</script>
 <form action="#" method="post" id="form_7350">
 
 <div class="form_info cmsmasters_textarea one_half">
-	<label for="cmsmasters_your_message_3">Your Message</label>
+	
 	<div class="form_field_wrap">
-		<textarea name="cmsmasters_your_message_3" id="cmsmasters_your_message_3" cols="60" rows="10"></textarea>
+		<textarea placeholder="Your Message" name="cmsmasters_your_message_3" id="cmsmasters_your_message_3" cols="60" rows="10"></textarea>
 	</div>
 </div>
 <div class="form_info cmsmasters_input one_half">
-	<label for="cmsmasters_contact_phone">Contact Phone</label>
+	
 	<div class="form_field_wrap">
-		<input type="text" name="cmsmasters_contact_phone" id="cmsmasters_contact_phone" value="" size="35" />
+		<input type="text" name="cmsmasters_contact_phone" id="cmsmasters_contact_phone" value="" size="35" placeholder="Contact phone" />
 	</div>
 </div>
 <div class="form_info cmsmasters_input one_half">
-	<label for="cmsmasters_add_us_to_the_waiting_list">Add us to the waiting list</label>
+
 	<div class="form_field_wrap">
-		<input type="text" name="cmsmasters_add_us_to_the_waiting_list" id="cmsmasters_add_us_to_the_waiting_list" value="" size="35" />
+		<input placeholder="Add us to the waiting list" type="text" name="cmsmasters_add_us_to_the_waiting_list" id="cmsmasters_add_us_to_the_waiting_list" value="" size="35" />
 	</div>
 </div>
 <div class="form_info cmsmasters_input one_half">
-	<label for="cmsmasters_parents_name">Parent's Name</label>
+	
 	<div class="form_field_wrap">
-		<input type="text" name="cmsmasters_parents_name" id="cmsmasters_parents_name" value="" size="35" />
+		<input placeholder="Parent's Name" type="text" name="cmsmasters_parents_name" id="cmsmasters_parents_name" value="" size="35" />
 	</div>
 </div>
 <div class="cl"></div>
